@@ -6,5 +6,8 @@ nmap $1 -n -sP | grep report | awk '{print $5}'
 
 
 
+root@kali:~# chmod +x "name.sh"
+
+
 root@kali:~# ./name.sh "ip addrs"
 
