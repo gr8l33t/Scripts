@@ -1,0 +1,10 @@
+vim "name.sh"
+
+#!/bin/bash
+
+nmap $1 -n -sP | grep report | awk '{print $5}'
+
+
+
+root@kali:~# ./name.sh "ip addrs"
+
