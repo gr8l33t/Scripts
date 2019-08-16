@@ -1,0 +1,27 @@
+root@kali~:# cd /var/log
+
+root@kali~:# ls
+
+apache2           debug           installer       openvas         sslsplit             wtmp
+apt               dpkg.log        kern.log        openvpn         stunnel4             Xorg.1.log
+auth.log          dradis          lastlog         php7.3-fpm.log  syslog               Xorg.1.log.old
+boot.log          exim4           macchanger.log  postgresql      sysstat
+bootstrap.log     faillog         messages        private         tor
+btmp              fontconfig.log  mysql           redis           unattended-upgrades
+chkrootkit        gdm3            nginx           samba           user.log
+
+
+YOU CAN FIND ALL THE LOGS IN HERE!!
+
+TO UNDERSTAND ERROR LOG eg:
+
+root@kali~:# cd /var/log/apache2
+
+root@kali~:# echo > error.log
+
+THIS COMMAND WILL CLEAR ALL THE CURRENT LOGS
+
+root@kali~:# tail -f error.log
+
+THIS COMMAND WILL GET YOU A BLANK SCREEN AND WHEN YOU REFRESH THE WEBSITE THE ERROR IN APACHE SERVER WILL SHOW HERE
+
