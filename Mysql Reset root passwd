@@ -1,0 +1,12 @@
+root@kali:~# /etc/init.d/mysql stop
+
+root@kali:~# /etc/init.d/mysql stop
+
+IF IT IS SHOWING ANY ERROR KILL ALL MYSQL PROCESS
+
+root@kali:~# killall mysqld mysqld_safe
+
+root@kali:~# ps aux | grep mysqld
+
+root@kali:~# mysqld_safe --skip-grant-tables
+
