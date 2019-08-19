@@ -1,0 +1,10 @@
+root@kali:~# apt install python3 python3-pip 
+root@kali:~# git clone git@github.com:TheGroundZero/openvas_to_report.git
+root@kali:~# cd {Openvas reporting}
+root@kali:~# pip3 install -r requirements.txt
+root@kali:~# pip3 install .
+
+ SYNTAX FOR CREATING XLSX FORMAT
+ DOWNLOAD .XML FILE FIRST
+ 
+root@kali:~# python3 -m openvasreporting -i openvasreport.xml -f xlsx
