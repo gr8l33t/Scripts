@@ -1,0 +1,13 @@
+root@kali:~# killall openvpn
+
+# stop the service    
+root@kali:~# /etc/init.d/openvpn stop
+
+# find the process if for some reason it keeps running
+root@kali:~#  lsof -i | grep openvpn
+
+# kill the proccess(s) by its PID
+root@kali:~# kill -9 <PID>
+
+# Check Status
+root@kali:~# /etc/init.d/openvpn status
