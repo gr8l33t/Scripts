@@ -1,0 +1,17 @@
+root@kali:~# # wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+root@kali:~# apt-get install gdebi -y
+
+root@kali:~# gdebi google-chrome-stable_current_amd64.deb
+
+TO RUN CHROME AS ROOT IN KALI LINUX
+
+rootkali:~# sed -i -e 's@Exec=/usr/bin/google-chrome-stable %U@Exec=/usr/bin/google-chrome-stable %U --no-sandbox@g' /usr/share/applications/google-chrome.desktop 
+
+OR YOUU CAN CHANGE IN 
+
+rootkali:~# vim /usr/bin/google-chrome-stable
+
+ADD THE PARAMETER LAST WITHOUT THE FIRST AND LAST QUOTES
+
+"   exec -a "$0" "$HERE/chrome" "$@" --no-sandbox  "
