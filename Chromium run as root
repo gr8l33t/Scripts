@@ -1,0 +1,1 @@
+root@kali:~# export CHROMIUM_FLAGS="$CHROMIUM_FLAGS --password-store=detect --no-sandbox --user-data-dir"
