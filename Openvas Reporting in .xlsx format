@@ -1,5 +1,5 @@
 root@kali:~# apt install python3 python3-pip 
-root@kali:~# git clone git@github.com:TheGroundZero/openvas_to_report.git
+root@kali:~# git clone https://github.com/TheGroundZero/openvasreporting.git
 root@kali:~# cd {Openvas reporting}
 root@kali:~# pip3 install -r requirements.txt
 root@kali:~# pip3 install .
